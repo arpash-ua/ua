@@ -1,0 +1,138 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Описание товара */
+#about {
+    padding: 60px 0;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Футер */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Закрепленный телефон */
+.phone-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phone-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.phone-button:hover {
+    background-color: #004d99;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+}
